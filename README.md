@@ -8,6 +8,9 @@ Note: Use with https://github.com/adriabama06/LawinServerMultiAccount
 docker compose up -d
 
 # Go to http://yourip:6080/
+
+# In backend set to remote and set your LawinServerMultiAccount backend IP
+
 # Put your game files in builds folder it should look like:
 builds/
 └── 7.40

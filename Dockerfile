@@ -16,6 +16,7 @@ RUN dpkg --add-architecture i386 && \
         wine \
         wine32 \
         wine64 \
+        winbind \
         xvfb \
         x11vnc \
         tigervnc-standalone-server \
