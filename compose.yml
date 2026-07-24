@@ -1,0 +1,15 @@
+services:
+  reboot-launcher:
+    image: ghcr.io/adriabama06/reboot-launcher-docker:main
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: reboot-launcher
+    ports:
+      - 5900:5900
+      - 6080:6080
+      - 7777:7777/udp
+    environment:
+      - RESOLUTION=1280x720x24
+    volumes:
+      - ./builds:/root/RebootLauncher/builds
