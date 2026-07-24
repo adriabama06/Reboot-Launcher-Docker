@@ -5,6 +5,9 @@ services:
       dockerfile: Dockerfile
       context: .
     container_name: reboot-launcher
+    tty: true
+    stdin_open: true
+    ipc: host
     ports:
       - 5900:5900
       - 6080:6080
